@@ -1,0 +1,14 @@
+/**********************************************************
+ * 
+ * Filename:  Exam_Q1.java
+ * Author: Evan Darnell
+ * Class:  Programming:  Visual Basic.NET and Java
+ * Semester:  2
+ * Assignment Number:  4.07 O-Unit Exam Question 1
+ * Description:  Create a set of classes as shown in the diagram. Create a different object for the different shapes and display the area of each shape. 
+ * (A graph of Hierarchical Inheritance, With the main class being "Shape", and the lower classes being: "Circle pi*r*r", "Rectangle l*b", and "Square a*a")
+ *
+ */
+public class Exam_Q1 {
+
+}
