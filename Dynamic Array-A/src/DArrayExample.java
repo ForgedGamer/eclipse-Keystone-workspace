@@ -1,7 +1,7 @@
 
 /**********************************************************
  * 
- * Filename:  DynamArray.java
+ * Filename:  DArrayExample.java
  * Author: Evan Darnell
  * Class:  Programming:  Visual Basic.NET and Java
  * Semester:  2
@@ -13,23 +13,28 @@ public class DArrayExample
 {
 	public static void main(String args[])
 	{
-		DynamicArray numbers;
-		int numCt;
-		int num;
-		numbers = new DynamicArray();
-		numCt=2;
-				
-		for(int c = 0; c <= 20; c++)
+		// Prepare the DynamicArray for storing the Fibinacci Sequence numbers
+		DynamicArray fibinacciSequence = new DynamicArray();
+		int totalNumbersStored = 0;
+		int maximumNumbersToCalculate = 20;
+		
+		// Preload the first two Fibinacci numbers
+		fibinacciSequence.putelement(totalNumbersStored++, 1);
+		fibinacciSequence.putelement(totalNumbersStored++, 1);
+		
+		// Calculate the requested number of Fibinacci numbers
+		for(int c = totalNumbersStored - 1; c < maximumNumbersToCalculate; c++)
 		{
-			num = 0;
-			numbers.putelement(numCt,num);
-				numCt++;
+			int fibinacciValue = fibinacciSequence.getelement(totalNumbersStored - 1) + fibinacciSequence.getelement(totalNumbersStored - 2);
+
+			fibinacciSequence.putelement(totalNumbersStored++, fibinacciValue);
 		}
 		
+		// Output all of the numbers that we have stored in the Fibinacci sequence Dynamic array
 		System.out.println("\nYour numbers in order are;\n");
-		for (int i = 0; i <= numCt; i++)
+		for (int i = 0; i < totalNumbersStored; i++)
 		{
-			System.out.println(numbers.getelement(i));
+			System.out.println(fibinacciSequence.getelement(i));
 		}
 	}
 }

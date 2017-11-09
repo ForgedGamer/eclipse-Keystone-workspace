@@ -1,11 +1,20 @@
 
+/**********************************************************
+ * 
+ * Filename:  DynamicArray.java
+ * Author: Evan Darnell
+ * Class:  Programming:  Visual Basic.NET and Java
+ * Semester:  2
+ * Assignment Number:  3.02 - Dynamic Arrays
+ * Description:  Use a Dynamic Array to produce a Fibonacci Series
+ *
+ */
+
 public class DynamicArray {
 	private int[] data;
 		public DynamicArray() 
 		{
-			data = new int[2];
-			data[0] = (1);
-			data[1] = (1);
+			data = new int[1];
 		}
 		
 		public int getelement (int position)
@@ -34,9 +43,6 @@ public class DynamicArray {
 				data=newdata;
 				System.out.println("size of the dynamic array increases to" +newsize );
 			}
-			int num1 = data[position -1];
-			int num2 = data[position -2];
-			value = num1 + num2;
 			data[position] = value;
 		}
 
