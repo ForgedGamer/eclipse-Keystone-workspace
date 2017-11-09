@@ -18,10 +18,8 @@ public class DArrayExample
 		int num;
 		numbers = new DynamicArray();
 		numCt=2;
-		
-		System.out.println("Enter some positive integers; Enter 0 to end.");
-		
-		for(int c = 20; c >= 0; c--)
+				
+		for(int c = 0; c <= 20; c++)
 		{
 			num = 0;
 			numbers.putelement(numCt,num);
