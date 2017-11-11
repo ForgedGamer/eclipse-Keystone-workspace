@@ -1,0 +1,77 @@
+package Shape;
+
+public class GradeHolder 
+{
+	public int ChosenStudent;
+	public int ChosenClass;
+	public void StudentChoice(int student,int CLAS)
+	{
+		switch(student) 
+		{
+		case 1:
+			ChosenStudent = 1;
+			System.out.println("You chose Billy!");
+			break;
+		case 2:
+			ChosenStudent = 2;
+			System.out.println("You chose James!");
+			break;
+		case 3:
+			ChosenStudent = 3;
+			System.out.println("You chose Jason!");
+			break;
+		}
+			switch(CLAS) 
+			{
+			case 1:
+				ChosenClass = 1;
+				System.out.println("You chose Bio!");
+				break;
+			case 2:
+				ChosenClass = 2;
+				System.out.println("You chose Geo!");
+				break;
+			case 3:
+				ChosenClass = 3;
+				System.out.println("You Chose Math!");
+				break;
+			}
+		
+		
+	}
+	public void StudentGrade(int grade)
+	{
+		
+		int[] Totals = {22, 35, 50};
+		int[] BillyPoints = {19, 28, 40};
+		int[] JamesPoints = {20, 26, 49};
+		int[] JasonPoints = {22, 35, 50};
+		int[] TotalPoints = new int[1];
+		int outcome;
+		int Counter=0;
+		if (ChosenStudent == 1) 
+			{
+				switch (ChosenClass) 
+				{
+				case 1:
+					outcome = Totals[ChosenClass]/ BillyPoints[ChosenClass];
+					TotalPoints[Counter++] = outcome;
+					System.out.println("Billy Scored" + outcome);
+				}
+			}
+		if (ChosenStudent == 2) 
+			{
+				switch(ChosenClass) 
+				{
+				
+				}
+			}
+		if (ChosenStudent == 3)
+			{
+				switch(ChosenClass)
+				{
+				
+				}
+			}
+	}
+}

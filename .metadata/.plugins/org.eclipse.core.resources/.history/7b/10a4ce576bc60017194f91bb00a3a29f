@@ -1,0 +1,139 @@
+package Shape;
+
+public class GradeHolder 
+{
+	public int ChosenStudent;
+	public int ChosenClass;
+	public void StudentChoice(int student,int CLAS)
+	{
+		switch(student) 
+		{
+		case 1:
+			ChosenStudent = 1;
+			System.out.println("You chose Billy!");
+			break;
+		case 2:
+			ChosenStudent = 2;
+			System.out.println("You chose James!");
+			break;
+		case 3:
+			ChosenStudent = 3;
+			System.out.println("You chose Jason!");
+			break;
+		}
+			switch(CLAS) 
+			{
+			case 1:
+				ChosenClass = 1;
+				System.out.println("You chose Bio!");
+				break;
+			case 2:
+				ChosenClass = 2;
+				System.out.println("You chose Geo!");
+				break;
+			case 3:
+				ChosenClass = 3;
+				System.out.println("You Chose Math!");
+				break;
+			}
+		
+		
+	}
+	public void StudentGrade(int grade)
+	{
+		
+		int outcome;
+		//These Integers are used for showing the average.
+		int Counter=0;
+		int temp = 0;
+		//These arrays store the point values for each class.
+		int[] Totals = {22, 35, 50};
+		int[] BillyPoints = {19, 28, 40};
+		int[] JamesPoints = {20, 26, 49};
+		int[] JasonPoints = {22, 35, 50};
+		int[] TotalPoints = new int[Counter];
+		
+		
+		
+		//This displays Billy's Points and percentage grade.
+		
+		if (ChosenStudent == 1) 
+			{
+				switch (ChosenClass) 
+				{
+				case 1:					
+					System.out.println("Billy Scored " + BillyPoints[ChosenClass-1] + " out of " + Totals[ChosenClass-1]);
+					outcome =  BillyPoints[ChosenClass-1] * 100/ Totals[ChosenClass-1];
+					System.out.println("Billy's grade is " + outcome);
+					break;
+				case 2:
+					System.out.println("Billy Scored " + BillyPoints[ChosenClass-1] + " out of " + Totals[ChosenClass-1]);
+					outcome =  BillyPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("Billy's grade is " + outcome);
+					break;
+				case 3:
+					System.out.println("Billy Scored " + BillyPoints[ChosenClass-1] + " out of " + Totals[ChosenClass-1]);
+					outcome =  BillyPoints[ChosenClass-1] * 100/ Totals[ChosenClass-1];
+					System.out.println("Billy's grade is " + outcome);
+					break;
+				}
+			}
+		//This displays James's Points and percentage grade.
+		if (ChosenStudent == 2) 
+			{
+				switch(ChosenClass) 
+				{
+				case 1:
+					System.out.println("James scored " + JamesPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JamesPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("James's grade is " + outcome);
+					break;
+				case 2:
+					System.out.println("James scored " + JamesPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JamesPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("James's grade is " + outcome);
+					break;
+				case 3:
+					System.out.println("James scored " + JamesPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JamesPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("James's grade is " + outcome);
+					break;				
+
+				}
+			}
+		//This displays Jason's Points and percentage grade
+		if (ChosenStudent == 3)
+			{
+				switch(ChosenClass)
+				{
+				case 1:
+					System.out.println("Jason scored " + JasonPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JasonPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("Jason's grade is " + outcome);
+					break;
+				case 2:
+					System.out.println("Jason scored " + JasonPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JasonPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("Jason's grade is " + outcome);
+					break;
+				case 3:
+					System.out.println("Jason scored " + JasonPoints[ChosenClass-1] + " out of " + Totals[ChosenClass]);
+					outcome = JasonPoints[ChosenClass-1] / Totals[ChosenClass-1] * 100;
+					System.out.println("Jason's grade is " + outcome);
+					break;				
+				}
+			}
+		
+		for(int C = 0; C < 10; C++)
+			{
+			
+			if(Counter < 4)
+				{
+				System.out.println("Debug - 1");
+					TotalPoints[Counter] = BillyPoints[temp-1];
+				}
+			temp++;
+			Counter++;
+			}
+	}
+}
