@@ -7,7 +7,6 @@ public class Bubble_Sort
 		int i,j,t;
 		int l = sort.length;
 		System.out.println("The size of the arraylist is: " + sort.length);
-		System.out.println("The unsorted numbers inside of the arraylist are: ");
 		for (i=0; i < l; i++) {
 			System.out.println(sort[i]);
 			
