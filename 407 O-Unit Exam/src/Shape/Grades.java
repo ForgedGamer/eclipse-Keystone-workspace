@@ -45,5 +45,6 @@ public class Grades
 		Grade.StudentGrade(grade);
 		
 		Grade.TotalGrade(outcome);
+		System.out.println(outcome);
 	}
 }

@@ -102,13 +102,12 @@ public class GradeHolder
 	public void TotalGrade(int Result)
 	{
 		int a;
-		int b;
-		int c = 0;
 		System.out.println("Debug");
-		for (int temp = 0; temp < 4; temp++)			
+		for (int temp = 0; temp < 3; temp++)			
 		{
 			a = BillyPoints[temp] + JamesPoints[temp];
-			Result = c+a;
+			
+			Result = Result+a;
 			
 			
 		}
