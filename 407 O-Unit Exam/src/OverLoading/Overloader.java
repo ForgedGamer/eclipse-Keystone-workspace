@@ -16,9 +16,9 @@ public class Overloader
 	{
 		
 	Overload overloader = new Overload();
-	double z =overloader.myexam(15.5, 17.8, 0);
-	int x = overloader.myexam(15, 0, 0);
-	overloader.myexam(7, 20);
+	double z =overloader.DoSomething(15.5, 17.8, 0);
+	int x = overloader.DoSomething(15, 0, 0);
+	overloader.DoSomething(7, 20);
 	System.out.println(x);
 	System.out.println(z);
 	}

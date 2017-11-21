@@ -13,18 +13,18 @@ package OverLoading;
 public class Overload 
 {
 
-	void myexam(int a, int b)
+	void DoSomething(int a, int b)
 	{
 		System.out.println(a+b);
 	}
-	int myexam(int a, int c, int b)
+	int DoSomething(int a, int c, int b)
 	{
 		double z = 10;
 		c = (int)z;
 		b = a + (int)c;
 		return b;
 	}
-	double myexam(double c, double b, double a)
+	double DoSomething(double c, double b, double a)
 	{
 		int z = 15;
 		a = (double) z;
