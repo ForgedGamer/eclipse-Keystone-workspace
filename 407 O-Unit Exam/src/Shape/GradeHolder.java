@@ -97,21 +97,24 @@ public class GradeHolder
 			}
 	}
     
-
-	
-	public void TotalGrade(int Result)
+	public int Result;
+	public void TotalGrade()
 	{
+		
 		int a;
+		int result = 0;
 		System.out.println("Debug");
 		for (int temp = 0; temp < 3; temp++)			
 		{
 			a = BillyPoints[temp] + JamesPoints[temp];
 			
-			Result = Result+a;
 			
+			result = result + a;
+			System.out.println(result);
 			
 		}
-		
+		Result = result/6;
+		System.out.println("The Total Average Grade is..." + Result);
 		
 	}
 

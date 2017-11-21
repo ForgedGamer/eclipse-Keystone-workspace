@@ -12,7 +12,6 @@ public class Grades
 		int student;
 		int CLS;
 		int grade = 0;
-		int outcome = 0;
 		
 		
 		System.out.println("Please enter a number to chose the student. 1 = Billy. 2 = James.");
@@ -43,8 +42,7 @@ public class Grades
 		}
 		Grade.StudentChoice(student,CLS);
 		Grade.StudentGrade(grade);
+		Grade.TotalGrade();
 		
-		Grade.TotalGrade(outcome);
-		System.out.println(outcome);
 	}
 }

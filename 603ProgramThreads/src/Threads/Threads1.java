@@ -1,22 +1,22 @@
-package ASMENT;
+package Threads;
 /**********************************************************
  * 
- * Filename:  ThreadsLifeCycle.java
+ * Filename:  Threads1.java
  * Author: Evan Darnell
  * Class:  Programming:  Visual Basic.NET and Java
  * Semester:  2
- * Assignment Number:  6.03 Threads
+ * Assignment Number:  6.03 Threads 
  * Description:  
  * Write a program to print the even numbers and the odd numbers between 0 and 30 using a single thread and then again using multiple threads.
  *
  */
 import java.lang.Runnable;
-public class ThreadsLifeCycle implements Runnable
+public class Threads1 implements Runnable
 {
 	public Thread uni;
 	boolean suspended = false;
 	private String threadname;
-	ThreadsLifeCycle (String name)
+	Threads1 (String name)
 	{
 		threadname = name;
 		System.out.println("We have created a thread named:" + threadname) ;
@@ -26,12 +26,17 @@ public class ThreadsLifeCycle implements Runnable
 	{
 		try
 		{
-			System.out.println("hi");
-			for(int i = 0; i<3; i+=1) 
+			for(int i = 0; i<30; i+=1) 
 			{
-				System.out.println("Thread looped " + (i+1) + " times");
-				Thread.sleep(30);
-				synchronized(this) 
+				;
+				if(i%2 == 0 == false)
+				{
+					System.out.println(i + " is odd.");
+				}else
+				{
+					System.out.println(i + " is even");
+				}
+				
 				{
 					while(suspended)
 					{
@@ -67,5 +72,6 @@ public class ThreadsLifeCycle implements Runnable
 		suspended = false;
 		notify();
 	}
+
 
 }

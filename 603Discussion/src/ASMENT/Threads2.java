@@ -5,9 +5,9 @@ package ASMENT;
  * Author: Evan Darnell
  * Class:  Programming:  Visual Basic.NET and Java
  * Semester:  2
- * Assignment Number:  6.03 Threads Life Cycle
+ * Assignment Number:  6.03 Threads
  * Description:  
- * Share a sample program that uses the thread life cycle (i.e. uses code to initiate, suspend, and resume threads).
+ *  Write a program to print the even numbers and the odd numbers between 0 and 30 using a single thread and then again using multiple threads.
  *
  */
 public class Threads2 {
@@ -21,7 +21,7 @@ public class Threads2 {
 			Thread.sleep(20);
 			thread1.suspend();
 			System.out.println("Suspending Thread.");
-			Thread.sleep(40);
+			Thread.sleep(40); 
 			System.out.println("Gonna resume the thread now!");
 			thread1.resume();
 			
