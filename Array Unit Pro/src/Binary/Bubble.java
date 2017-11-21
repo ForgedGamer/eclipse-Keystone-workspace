@@ -6,7 +6,8 @@ public class Bubble {
 		int i,j,t;
 		int l = ArraytoSort.length;
 		System.out.println("The size of the arraylist is: " + ArraytoSort.length);
-		for (i=0; i < l; i++) {
+		for (i=0; i < l; i++) 
+		{
 			System.out.println(ArraytoSort[i]);
 			
 		}
@@ -26,9 +27,9 @@ public class Bubble {
 			}
 		
 		}
-		for(i=0; i< 6; i++)
+		for(i=0; i < l; i++)
 		{
-		System.out.println(ArraytoSort[i]);
+			System.out.println(ArraytoSort[i]);
 		}
 		return ArraytoSort;
 		
