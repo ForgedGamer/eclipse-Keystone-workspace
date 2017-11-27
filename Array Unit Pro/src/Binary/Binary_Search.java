@@ -27,10 +27,7 @@ public class Binary_Search
 		Bubble bubble = new Bubble();
 		bubble.bubbleSort(a);
 		double z = 45.3;
-		for(int i = 0; i <3; i++)
-		{
 			System.out.println("Found "  + z + "at "+ binarySearch(a,z));
-		}
 	}
 }
  

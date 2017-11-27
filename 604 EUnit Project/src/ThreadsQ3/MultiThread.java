@@ -1,23 +1,25 @@
-0package MultiThreads;
-
+package ThreadsQ3;
 /**********************************************************
  * 
- * Filename:  Multithreads.java
+ * Filename:  MultiThread.java
  * Author: Evan Darnell
  * Class:  Programming:  Visual Basic.NET and Java
  * Semester:  2
- * Assignment Number:  6.03 Threads 
+ * Assignment Number:  6.04 E-Unit Project 
  * Description:  
- * Write a program to print the even numbers and the odd numbers between 0 and 30 using a single thread and then again using multiple threads.
+ * Write a program to start three tasks at a time, given a certain amount of time to make the tasks pause, using multithreading concept.
  *
  */
-public class Multithreads implements Runnable
+import java.util.ArrayList;;
+public class MultiThread implements Runnable
 {
+	ArrayList<String> Words= new ArrayList<String>();
 	public Thread uni;
 	public int Choice;
 	boolean suspended = false;
 	private String threadname;
-	Multithreads (String name)
+
+	MultiThread (String name)
 	{
 		threadname = name;
 		System.out.println("We have created a thread named:" + threadname) ;
@@ -25,6 +27,31 @@ public class Multithreads implements Runnable
 	
 	public void run()
 	{
+		Words.add("Hello");
+		Words.add("good bye");
+		Words.add("So long");
+		Words.add("Still here");
+		Words.add("Repeat");
+		Words.add("Hello");
+		Words.add("good bye");
+		Words.add("So long");
+		Words.add("Still here");
+		Words.add("Repeat");
+		Words.add("Hello");
+		Words.add("good bye");
+		Words.add("So long");
+		Words.add("Still here");
+		Words.add("Repeat");
+		Words.add("Hello");
+		Words.add("good bye");
+		Words.add("So long");
+		Words.add("Still here");
+		Words.add("Repeat");
+		Words.add("Hello");
+		Words.add("good bye");
+		Words.add("So long");
+		Words.add("Still here");
+		Words.add("End");
 		try
 		{
 			
@@ -45,6 +72,11 @@ public class Multithreads implements Runnable
 								System.out.println(i + " is even");
 							}
 							break;
+					case 3:
+						if( i <24)
+						{
+							System.out.println(Words.get(i));
+						}
 					}
 				{
 					while(suspended)
@@ -82,5 +114,4 @@ public class Multithreads implements Runnable
 		suspended = false;
 		notify();
 	}
-
 }
