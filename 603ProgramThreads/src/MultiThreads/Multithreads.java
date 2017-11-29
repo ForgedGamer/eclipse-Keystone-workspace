@@ -1,4 +1,4 @@
-0package MultiThreads;
+package MultiThreads;
 
 /**********************************************************
  * 
