@@ -6,11 +6,14 @@ import java.awt.event.*;
 public class SwingGUI extends Applet implements ActionListener
 {
 	TextField input,output;
-	JLable labl;
+	JLabel labl;
 	Label Labbel, Cats;
 	Button enter;
 	int num, sum = 0;
 	
+	public void actionPerformed(ActionEvent e) {
+        // code
+	}
 	
 	public void init()
 	{
@@ -45,11 +48,11 @@ public class SwingGUI extends Applet implements ActionListener
 		sum = sum+num;
 		input.setText("");
 		output.setText(Integer.toString(sum));
-		labl.seForeground(Color.pink);
+		labl.setForeground(Color.pink);
 		labl.setText("The amount of cats you've entered so far is : " + output.getText());
 		} catch(NumberFormatException oops) 
 		{
-			labl.setForground(Color.red);
+			labl.setForeground(Color.red);
 			labl.setText("Invalid input.");
 		}
 	}
