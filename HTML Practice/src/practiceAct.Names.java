@@ -1,4 +1,4 @@
-/*package practiceAct;*/
+package practiceAct;
 
 public class Names extends java.applet.Applet
 {
